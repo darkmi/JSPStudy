@@ -1,26 +1,25 @@
 <%-- 
 
-	FileName:hello.jsp
-	desc: JSP的hello world程序.
+	FileName:application_set.jsp
+	desc: JSP的application对象示例:向application对象中设置值.
 	Author:darkmi
-	Date:2014/12/16
+	Date:2014/12/31
 	Copyright:www.jikexueyuan.com
 	MyBlog:blog.darkmi.com
 
 --%>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>hello world</title>
+<title>application对象示例</title>
 </head>
 <body>
 <%
-String str = "hello jikexueyuan";
-	out.println(str);
+	application.setAttribute("darkmi", "jikexueyuan.com");
+
 %>
 </body>
 </html>
