@@ -1,7 +1,7 @@
 <%-- 
 
-	FileName:session01.jsp
-	desc: JSP的session对象示例1.
+	FileName:session.jsp
+	desc: JSP的session对象示例.
 	Author:darkmi
 	Date:2014/12/30
 	Copyright:www.jikexueyuan.com
