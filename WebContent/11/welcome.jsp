@@ -23,8 +23,9 @@
 		if (session.getAttribute("userid") != null) {
 	%>
 	<h2>
-		欢迎：<%=session.getAttribute("userid")%></h2>
-		<a href="logout.jsp">注销</a>
+		欢迎：<%=session.getAttribute("userid")%>
+	</h2>
+	<a href="logout.jsp">注销</a>
 	<br>
 	<%
 		} else {

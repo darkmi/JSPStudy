@@ -1,5 +1,14 @@
 package com.jikexueyuan.entity;
 
+/**
+ * 	FileName: UserEntity.java
+ *	desc: 用于测试JavaBean.
+ *	Date: 2015/01/21
+ *	Copyright: www.jikexueyuan.com
+ *	MyBlog: blog.darkmi.com
+ *  @author darkmi
+ *
+ */
 public class UserEntity {
 	private String userName;
 	private String password;

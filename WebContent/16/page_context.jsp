@@ -26,22 +26,22 @@
 
 	<!-- 使用pageContext对象获取到out对象 -->
 	<%
-		pageContext.setAttribute("darkmi", "jikexueyuan", pageContext.SESSION_SCOPE);
+		//pageContext.setAttribute("darkmi", "jikexueyuan", pageContext.SESSION_SCOPE);
 		//明确指定获取范围
-		out.println("session范围内可以找到key为darkmi键值对：" + pageContext.getAttribute("darkmi", pageContext.SESSION_SCOPE));
-		out.println("<br/>");
+		//out.println("session范围内可以找到key为darkmi键值对：" + pageContext.getAttribute("darkmi", pageContext.SESSION_SCOPE));
+		//out.println("<br/>");
 
 		/*
 		 *不明确指定获取范围的话就从page范围寻找指定的key，
 		 *此处输出为null，因为page范围没有key为darkmi的键值对
 		 */
-		out.println("page范围是没有key为darkmi键值对的：" + pageContext.getAttribute("darkmi"));
-		out.println("<br/>");
+		//out.println("page范围是没有key为darkmi键值对的：" + pageContext.getAttribute("darkmi"));
+		//out.println("<br/>");
 
 		/*
 		 *按照 page > request > session > application 这个顺序寻找指定key的键值对
 		 */
-		out.println("顺序查找所有范围，可以找到：" + pageContext.findAttribute("darkmi"));
+		//out.println("顺序查找所有范围，可以找到：" + pageContext.findAttribute("darkmi"));
 	%>
 </body>
 </html>
