@@ -5,56 +5,57 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>登陆页面</title>
+
 <style type="text/css">
 body {
 	color: #000;
-	font-size: 12px;
-	margin: 0px auto;
+	font-size: 14px;
+	margin: 20px auto;
 }
 </style>
 
 <script type="text/javascript">
 	function check(form) {
 		//document.forms.form1.username.value取得form1中Username的值 并判断是否为空
-		if (document.forms.form1.username.value == "") {
+		if (document.forms.LoginForm.uname.value == "") {
 			//如果 为""则弹出提示
-			alert("pls input username");
+			alert("请输入用户名！");
 			//将输入焦点定位到没有输入的地方
-			document.forms.form1.username.focus();
+			document.forms.LoginForm.uname.focus();
 			//返回错误
 			return false;
 		}
-		if (document.forms.form1.password.value == "") {
-			alert("pls input password");
-			document.forms.form1.password.focus();
+		if (document.forms.LoginForm.upwd.value == "") {
+			alert("请输入密码！");
+			document.forms.LoginForm.upwd.focus();
 			return false;
 		}
 	}
 </script>
 </head>
+
 <body>
-	<form action="LoginServlet" method="post" name="form1">
+	<form action="<%= request.getContextPath() %>/checkServlet" method="post" name="LoginForm">
 
-
-		<table border="1" cellspacing="1" cellpadding="1" bordercolor="silver"
-			align="center">
+		<table border="1" cellspacing="0" cellpadding="5" bordercolor="silver" align="center">
 			<tr>
-				<td colspan="2" align="center" bgcolor="#e8e8e8">用户登陆</td>
+				<td colspan="2" align="center" bgcolor="#E8E8E8">用户登陆</td>
 			</tr>
-			<tr>
+			<tr >
 				<td>用户名：</td>
-				<td><input type="text" name="username" /></td>
+				<td><input type="text" name="uname" /></td>
 			</tr>
 			<tr>
 				<td>密码：</td>
-				<td><input type="password" name="password" /></td>
+				<td><input type="password" name="upwd" /></td>
 			</tr>
 			<tr>
-				<td><a href="rsg.jsp">新用户注册</a></td>
-				<!-- onclick="return check(this) 调用上面的Script进行验证 -->
-				<td><input type="submit" name="submit"
-					onclick="return check(this);" /><input type="reset" name="reset" /></td>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" onclick="return check(this);" />
+					<input type="reset" name="reset" />
+				</td>
 			</tr>
 		</table>
 

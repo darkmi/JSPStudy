@@ -20,22 +20,39 @@
 		<servlet-name>config</servlet-name>
 		<url-pattern>/13/*</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Servlet配置 -->
 	<servlet>
 		<servlet-name>HelloServlet</servlet-name>
 		<servlet-class>com.jikexueyuan.servlet.HelloServlet</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>HelloServlet</servlet-name>
 		<url-pattern>/Hello</url-pattern>
 	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
 		<servlet-class>com.jikexueyuan.servlet.LoginServlet</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/loginServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckServlet</servlet-name>
+		<servlet-class>com.jikexueyuan.servlet.CheckServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CheckServlet</servlet-name>
+		<url-pattern>/checkServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 过滤器配置 -->
 	<filter>
 		<filter-name>FilterOne</filter-name>
 		<filter-class>com.jikexueyuan.filter.FilterOne</filter-class>

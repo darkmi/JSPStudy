@@ -7,6 +7,10 @@
 <title>登陆异常提示页面</title>
 </head>
 <body>
-登陆失败.
+登陆失败.<br/>
+用户名：<%= request.getParameter("uname") %><br/>
+密码：<%= request.getParameter("upwd") %><br/>
+
+<a href="login.jsp">返回登陆页面</a>
 </body>
 </html>
