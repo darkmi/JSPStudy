@@ -1,6 +1,6 @@
 <%-- 
 
-	FileName:session01.jsp
+	FileName:login.jsp
 	desc: JSP+Servlet实现登陆逻辑.
 	Author:darkmi
 	Date:2015/01/21

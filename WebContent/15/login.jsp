@@ -1,3 +1,13 @@
+<%-- 
+
+	FileName:login.jsp
+	desc: JSP+Servlet+JDBC实现登陆逻辑.
+	Author:darkmi
+	Date:2015/01/21
+	Copyright:www.jikexueyuan.com
+	MyBlog:blog.darkmi.com
+
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
