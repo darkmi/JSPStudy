@@ -12,6 +12,7 @@ public class OnLineCountListener implements HttpSessionListener, ServletContextL
 		ServletContextAttributeListener {
 
 	private int count;
+	@SuppressWarnings("unused")
 	private ServletContext context = null;
 
 	public OnLineCountListener() {

@@ -1,6 +1,6 @@
 <%-- 
 
-	FileName:session01.jsp
+	FileName:login.jsp
 	desc: JSP的session对象示例2：登陆页面.
 	Author:darkmi
 	Date:2014/12/30

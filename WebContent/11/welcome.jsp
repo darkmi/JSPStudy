@@ -1,6 +1,6 @@
 <%-- 
 
-	FileName:session01.jsp
+	FileName:welcome.jsp
 	desc: JSP的session对象示例2：欢迎页面，根据session中不同的值显示不同的信息。
 	Author:darkmi
 	Date:2014/12/30

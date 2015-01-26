@@ -13,6 +13,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * 	FileName: LoginFilter.java
+ *	desc: 一个用于执行登陆验证的过滤器.
+ *	Date: 2015/01/21
+ *	Copyright: www.jikexueyuan.com
+ *	MyBlog: blog.darkmi.com
+ *  @author darkmi
+ *
+ */
 public class LoginFilter implements Filter {
 
 	@Override
@@ -39,7 +48,7 @@ public class LoginFilter implements Filter {
 		String flag = (String) session.getAttribute("flag");
 
 		// 如果当前访问的是login.action，则说明正在进行登录操作，会放行   
-		// 如果session中有flag标记，并且标记为已登录，则放行   
+		// 如果session中有flag标记，并且标记为已登录，则放行
 
 		if ((actionUrl != null && actionUrl.equals("/login.action"))
 

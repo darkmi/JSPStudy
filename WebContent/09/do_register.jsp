@@ -1,3 +1,14 @@
+ <%-- 
+
+	FileName:do_register.jsp
+	desc: 通过登陆示例程序演示JSP内置对象Request对象的使用.
+	Author:darkmi
+	Date:2014/12/16
+	Copyright:www.jikexueyuan.com
+	MyBlog:blog.darkmi.com
+
+--%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 

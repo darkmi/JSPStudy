@@ -1,7 +1,7 @@
 <%-- 
 
-FileName:declaration.jsp
-desc: JSP声明示例程序.
+FileName:expression.jsp
+desc: JSP表达式示例程序.
 Author:darkmi
 Date:2014/12/16
 Copyright:www.jikexueyuan.com

@@ -12,13 +12,22 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 	FileName: LoginFilter.java
+ *	desc: 一个用于执行编码转换的过滤器.
+ *	Date: 2015/01/21
+ *	Copyright: www.jikexueyuan.com
+ *	MyBlog: blog.darkmi.com
+ *  @author darkmi
+ *
+ */
 public class EncodingFilter implements Filter {
 	String charSet = null;
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		System.out.println("======= init filter =======");
-		
+
 		charSet = filterConfig.getInitParameter("charSet");
 		String filterName = filterConfig.getFilterName();
 		Enumeration<String> nameEnum = filterConfig.getInitParameterNames();

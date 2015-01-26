@@ -1,3 +1,13 @@
+ <%-- 
+
+	FileName:do_register.jsp
+	desc: 动作指令useBean示例程序.
+	Author:darkmi
+	Date:2014/12/16
+	Copyright:www.jikexueyuan.com
+	MyBlog:blog.darkmi.com
+
+--%>
 <%@page import="com.jikexueyuan.entity.UserEntity"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

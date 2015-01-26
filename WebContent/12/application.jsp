@@ -1,6 +1,6 @@
 <%-- 
 
-	FileName:application_set.jsp
+	FileName:application.jsp
 	desc: JSP的application对象示例.
 	Author:darkmi
 	Date:2014/12/31

@@ -9,6 +9,15 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+/**
+ * 	FileName: FilterTwo.java
+ *	desc: 第二个过滤器,只输出日志信息,不执行任何业务逻辑.
+ *	Date: 2015/01/21
+ *	Copyright: www.jikexueyuan.com
+ *	MyBlog: blog.darkmi.com
+ *  @author darkmi
+ *
+ */
 public class FilterTwo implements Filter {
 
 	/**
