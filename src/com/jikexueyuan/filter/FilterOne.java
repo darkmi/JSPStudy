@@ -41,6 +41,7 @@ public class FilterOne implements Filter {
 		System.out.println("======= 开始执行第1个过滤器的doFilter方法 =======");
 		chain.doFilter(req, resp);
 		System.out.println("======= 结束执行第1个过滤器的doFilter方法 =======");
+		System.out.println();
 	}
 
 	/**

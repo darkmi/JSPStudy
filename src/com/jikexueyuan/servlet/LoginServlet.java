@@ -2,6 +2,7 @@ package com.jikexueyuan.servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,6 +15,9 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+		
+		//req.setCharacterEncoding("UTF-8");
+		
 		String userName = req.getParameter("uname");
 		String password = req.getParameter("upwd");
 
@@ -27,27 +31,31 @@ public class LoginServlet extends HttpServlet {
 		
 		String forward = null;
 
-		if (userName.equals("darkmi") && password.equals("jikexueyuan")) {
+		//if (userName.equals("darkmi") && password.equals("jikexueyuan")) {
+		if (userName.equals("极客学院") && password.equals("123456")) {
+			
+			req.getSession().setAttribute("flag", "login_success");
 			//请求转发
-			//forward = "/14/success.jsp";
-			forward = "http://www.jikexueyuan.com";
-			//RequestDispatcher rd = req.getRequestDispatcher(forward);
-			//rd.forward(req, resp);
+			forward = "/14/success.jsp";
+			//forward = "http://www.jikexueyuan.com";
+			RequestDispatcher rd = req.getRequestDispatcher(forward);
+			rd.forward(req, resp);
 			
 			//请求重定向
 			//resp.sendRedirect(req.getContextPath() + "/14/success.jsp");
-			resp.sendRedirect(forward);
+			//resp.sendRedirect(forward);
 
 		} else {
+			req.getSession().setAttribute("flag", "login_error");
 			//请求转发
-			//forward = "/14/error.jsp";
-			forward = "http://www.jikexueyuan.com";
-			//RequestDispatcher rd = req.getRequestDispatcher(forward);
-			//rd.forward(req, resp);
+			forward = "/14/error.jsp";
+			//forward = "http://www.jikexueyuan.com";
+			RequestDispatcher rd = req.getRequestDispatcher(forward);
+			rd.forward(req, resp);
 
 			//请求重定向
 			//resp.sendRedirect(req.getContextPath() + "/14/error.jsp");
-			resp.sendRedirect(forward);
+			//resp.sendRedirect(forward);
 		}
 
 	}

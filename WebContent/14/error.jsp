@@ -18,9 +18,20 @@
 </head>
 <body>
 登陆失败.<br/>
+
+错误提示：
+<%
+	Object obj = request.getAttribute("msg");
+	if(obj != null){
+		out.println(obj.toString());
+	}else{
+		out.println("无");
+	}
+%>
+
 用户名：<%= request.getParameter("uname") %><br/>
 密码：<%= request.getParameter("upwd") %><br/>
 
-<a href="login.jsp">返回登陆页面</a>
+<a href="<%=request.getContextPath() %>/14/login.jsp">返回登陆页面</a>
 </body>
 </html>

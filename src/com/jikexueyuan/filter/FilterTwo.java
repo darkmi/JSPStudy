@@ -8,6 +8,7 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 	FileName: FilterTwo.java
@@ -38,9 +39,12 @@ public class FilterTwo implements Filter {
 	 */
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException,
 			ServletException {
+		HttpServletRequest request = (HttpServletRequest)req;
 		System.out.println("======= 开始执行第2个过滤器的doFilter方法 =======");
+		System.out.println("请求来源： " + request.getRequestURL().toString());
 		chain.doFilter(req, resp);
 		System.out.println("======= 结束执行第2个过滤器的doFilter方法 =======");
+		System.out.println();
 	}
 
 	/**

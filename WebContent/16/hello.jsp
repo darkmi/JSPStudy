@@ -25,5 +25,9 @@ this is hello.jsp <br/><br/>
 	String str = "hello jikexueyuan";
 	out.println(str);
 %>
+
+<br/>
+<br/>
+返回首页 <a href="<%= request.getContextPath() %>/16/index.jsp">index.jsp</a><br/>
 </body>
 </html>
